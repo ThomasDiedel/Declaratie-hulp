@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                          // Stel de output in op ECMAScript 6 (ES6)
+      "lib": ["dom", "esnext"],                 // Voeg DOM- en ESNext-functies toe
+      "allowJs": true,                          // Sta het gebruik van .js bestanden toe naast .ts/.tsx
+      "skipLibCheck": true,                     // Versnelt de compilatie door het controleren van bibliotheken over te slaan
+      "esModuleInterop": true,                  // Sta import van CommonJS-modules toe
+      "allowSyntheticDefaultImports": true,     // Sta synthetische default imports toe
+      "strict": true,                           // Zet strikte typecontrole aan
+      "forceConsistentCasingInFileNames": true, // Dwing consistentie af in bestandshoofdlettergebruik
+      "module": "ESNext",                       // Gebruik ESNext modules voor import/export
+      "moduleResolution": "node",               // Gebruik Node.js-achtige module-resolutie
+      "resolveJsonModule": true,                // Sta het importeren van JSON-bestanden toe
+      "jsx": "react-jsx",                       // Gebruik de nieuwe JSX-transformatie van React (React 17+)
+      "noEmit": true                            // Voorkom dat TypeScript daadwerkelijke uitvoer genereert (alleen voor type-checking)
+    },
+    "include": [
+      "src/**/*.ts",                            // Neem alle .ts bestanden in de src-map op
+      "src/**/*.tsx",                           // Neem alle .tsx bestanden in de src-map op
+      "src/**/*.d.ts"                           // Neem alle .d.ts bestanden in de src-map op (voor de type-declaraties)
+    ],
+    "exclude": [
+      "node_modules"                            // Excludeer de node_modules map van compilatie
+    ]
+  }
